@@ -4,7 +4,7 @@ function parseProducts(json) {
     let data;
     data = JSON.parse(json);
     let products;
-    return products;
+    return json;
     // Аргументом функции является JSON
 
     // Преобразуйте строку json, переданную как аргумент функции,
@@ -13,12 +13,12 @@ function parseProducts(json) {
     // Верните как результат функции свойство products объекта data
 }
     function renderProductsCards(json){
-        clearProducts();
+    function clearProducts();
         let products;
         products = parseProducts(json);
         length = products.length;
         for(let i = 0; i < length; i += 1){
-            addProduct(products[i])
+    function addProduct(products[i])
         }
     }
 // Напишите функцию renderProductsCards(json)
