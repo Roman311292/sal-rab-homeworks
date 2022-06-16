@@ -35,9 +35,13 @@
 
 function sendRequest(name, phone, goods, order, sum) {
     let data = {"client": `${name} +  ${phone}`,
-                 "order": {"address" : `ул. ${street}, дом ${house}, 4 ${enterance}, 5 ${floor}, кв ${flat}`,
+                 "order": {"address" : `ул. ${street}, дом ${house}, ${enterance} подъезд, ${floor} этаж, кв ${flat}`,
                             "sum": totalsum},
-                "goods": [], 
+                "goods": [
+                   {"title": product.title,
+                    "count": product.count
+                } 
+                ], 
                
 
                 }};
